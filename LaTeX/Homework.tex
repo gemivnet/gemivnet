@@ -1,0 +1,66 @@
+\documentclass{exam}
+\setlength{\parindent}{0px}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tcolorbox}
+\usepackage{pifont}
+\usepackage{listings}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{mathtools}
+
+\setlength\columnsep{10pt}
+\newcolumntype{?}{!{\vrule width 1pt}}
+
+\AtBeginEnvironment{tcolorbox}{\setcounter{equation}{0}}
+\addtolength{\jot}{0.5em}
+
+\tcbset{title=Answer}
+\tcbuselibrary{breakable}
+\tcbuselibrary{skins}
+
+\usepackage{etoolbox}
+\newcommand{\zerodisplayskips}{%
+  \setlength{\abovedisplayskip}{0pt}%
+  \setlength{\belowdisplayskip}{0pt}%
+  \setlength{\abovedisplayshortskip}{0pt}%
+  \setlength{\belowdisplayshortskip}{0pt}}
+\appto{\normalsize}{\zerodisplayskips}
+\appto{\small}{\zerodisplayskips}
+\appto{\footnotesize}{\zerodisplayskips}
+
+\pagestyle{headandfoot}
+\header{Name}{Assignment Name}{CM \#\#\#\#}
+\headrule
+\footer{Class Number}{Due Date}{Page \thepage\ of \numpages}
+\footrule
+
+\begin{document}
+
+\begin{questions}
+  
+  \question Example question with no subparts
+  \begin{tcolorbox}
+    
+  \end{tcolorbox}
+
+  \question Example question with subparts
+
+  \begin{parts}
+
+    \part A part of the question
+    \begin{tcolorbox}
+      
+    \end{tcolorbox}
+
+    \part The second part of the question
+    \begin{tcolorbox}
+      
+    \end{tcolorbox}
+    
+  \end{parts}
+
+\end{questions}
+  
+\end{document}
